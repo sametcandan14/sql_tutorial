@@ -139,3 +139,58 @@
 --GROUP BY country_id
 --ORDER BY ct DESC 
 --LIMIT 1;
+
+--HOMEWORK 8
+
+--1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+--CREATE TABLE employee (
+--id SERIAL PRIMARY KEY,
+--name VARCHAR(50),
+--birthday DATE,
+--email VARCHAR(100)
+--)
+
+--2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+--insert into employee (id, name, birthday, email) values (1, 'Amitie', '1920-09-20 13:10:56', 'acray0@mashable.com');
+--insert into employee (id, name, birthday, email) values (2, 'Elvis', '2019-11-17 23:47:22', 'egooke1@answers.com');
+--insert into employee (id, name, birthday, email) values (3, 'Josias', '1971-10-07 12:01:21', 'jlillford2@techcrunch.com');
+--insert into employee (id, name, birthday, email) values (4, 'Sherm', '1953-02-10 22:42:37', 'shousden3@cocolog-nifty.com');
+--insert into employee (id, name, birthday, email) values (5, 'Glenden', '1971-09-27 09:00:39', 'gmufford4@webs.com');
+--....
+
+
+--3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+--UPDATE employee
+--SET name = 'Işıl',
+--	birthday = '2005-10-10',
+--	email = 'isil@gmail.com'	
+--WHERE id = 2;
+
+
+--UPDATE employee
+--SET id = 63,
+--	birthday = '2005-10-10',
+--	email = 'kalilinux@gmail.com'	
+--WHERE name = 'Kali';
+
+--UPDATE employee
+--SET id = 52,
+--    name='Tulley',
+--	birthday = '2005-10-10'	
+--WHERE email = 'ptulley5@ning.com';
+
+
+
+--4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+--DELETE FROM employee
+--WHERE id=30;
+
+--DELETE FROM employee
+--WHERE name='Tris';
+
+--DELETE FROM employee
+--WHERE email='drenonh@4shared.com';
